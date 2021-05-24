@@ -1,6 +1,6 @@
-<h1 class=" bold">La multiplicacion es: <%=params[:x].to_i * params[:y].to_i %></h1>
-<form>
-    <input name="x">
-    <input name="y"> 
-    <input type="submit">
+<h1 class=" bold">Ingresa tu correo:<%=params[:x]%></h1>
+<!-- En accion se determina donde se envia el formulario luego de hacer click -->
+<form action="/pages/create" method="get"> 
+    <input name="email">
+    <input type="submit" value="enviar">
 </form>
